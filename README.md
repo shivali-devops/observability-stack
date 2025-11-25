@@ -46,6 +46,7 @@ This project demonstrates a complete monitoring and alerting infrastructure usin
 - **Port**: 3000
 - Default credentials: `admin:admin`
 - Data source: Prometheus
+- Custom dashboard available at [grafana/dashboards/custom-dashboard.json](grafana/dashboards/custom-dashboard.json). Import this JSON into Grafana via "Manage dashboards" → "Import."
 
 ### Alertmanager (`alertmanager/`)
 - **Port**: 9093
@@ -110,6 +111,9 @@ api_url: "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
 ├── prometheus/
 │   ├── prometheus.yml          # Prometheus configuration
 │   └── alert_rules.yml         # Alert rules
+├── grafana/
+│   └── dashboards/
+│       └── custom-dashboard.json # Grafana dashboard JSON
 ├── alertmanager/
 │   └── alertmanager.yml        # Alertmanager configuration
 └── app-metrics-demo/
